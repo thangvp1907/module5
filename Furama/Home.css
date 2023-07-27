@@ -1,0 +1,150 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Màu nền tổng thể trang web */
+}
+
+header {
+    background-color: #ffa726; /* Màu sắc sặc sỡ cho header */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff7043; /* Màu sắc sặc sỡ cho hover */
+}
+
+/* Dropdown menu */
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ff7043; /* Màu sắc sặc sỡ cho dropdown menu */
+    padding: 0.5rem 0;
+    list-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+nav li:hover .dropdown-menu {
+    display: block;
+}
+
+nav .dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+nav .dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .dropdown-menu li a:hover {
+    background-color: #ff8a65; /* Màu sắc sặc sỡ cho dropdown menu khi hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+#hero {
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 5rem;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+form input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #ff7043; /* Màu sắc sặc sỡ cho nút tìm kiếm */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.room-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff; /* Màu nền cho các card phòng */
+}
+
+.room-card img {
+    max-width: 100%;
+}
+
+.room-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.room-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.room-card a {
+    padding: 0.5rem 1rem;
+    background-color: #ff7043; /* Màu sắc sặc sỡ cho nút xem chi tiết */
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ffa726; /* Màu sắc sặc sỡ cho footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
