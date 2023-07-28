@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc33638a-c737-44b5-9c76-bc14058469cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../angular-change-font-size/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../angular-change-font-size/.idea/angular-change-font-size.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../angular-change-font-size/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../angular-change-font-size/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../angular-change-font-size/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../angular-change-font-size/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../angular-change-font-size/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-show-pet-info/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../typescript_variable/typescript" beforeDir="false" afterPath="$PROJECT_DIR$/../../../typescript_variable/typescript" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2TBkzmXInpk18X1QKwLbDc6jZwg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/angular-show-pet-info" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc33638a-c737-44b5-9c76-bc14058469cd" name="Default Changelist" comment="" />
+      <created>1690524126322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690524126322</updated>
+      <workItem from="1690524129184" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1690524149600">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1690524149600" />
+  </component>
+</project>
