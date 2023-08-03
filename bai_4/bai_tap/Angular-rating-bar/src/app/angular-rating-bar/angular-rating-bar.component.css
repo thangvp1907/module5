@@ -1,0 +1,12 @@
+.rating-bar {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star {
+  color: gray;
+}
+
+.full {
+  color: gold;
+}
