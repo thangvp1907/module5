@@ -27,8 +27,9 @@ export class CountdownService {
     });
   }
 
-  stopCountdown(): void {
-    this.countdownSource.next(0);
+  stopCountdown(): BehaviorSubject<number> {
+    this.countdownSource.next(0)
+    return this.countdownSource;
   }
 
   getRemainingTime(): Observable<number> {

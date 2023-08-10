@@ -1,0 +1,95 @@
+<form [formGroup]="formController" (ngSubmit)="onSubmit()" class="container mt-5">
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="form-control" formControlName="email">
+    <div class="col alert alert-danger" role="alert"
+         *ngIf="formController.controls.email.invalid && (formController.controls.email.dirty || formController.controls.email.touched)">
+      Email is required.
+    </div>
+  </div>
+
+  <!--  <div formGroupName="confirm">-->
+  <!--    <div class="form-group row">-->
+  <!--      <label for="example-tel-input" class="col-2 col-form-label">-->
+  <!--        PassWord:-->
+  <!--      </label>-->
+  <!--      <div class="col-10">-->
+  <!--        <input  class="form-control" type="password" id="example-password-input" formControlName="passWord">-->
+  <!--      </div>-->
+  <!--      <p class="col alert alert-danger" role="alert"-->
+  <!--         *ngIf="rfContact.controls.password?.touched && rfContact.controls.password?.errors?.minLength">-->
+  <!--        password more than 6 char-->
+  <!--      </p>-->
+  <!--    </div>-->
+
+  <!--    <div class="form-group row">-->
+  <!--      <label for="example-tel-input" class="col-2 col-form-label">-->
+  <!--        Confirm PassWord:-->
+  <!--      </label>-->
+  <!--      <div class="col-10">-->
+  <!--        <input  class="form-control" type="password" id="example-confirm-password-input" formControlName="confirmPassword">-->
+  <!--        <p *ngIf="rfContact.controls.errors?.touched && rfContact.hasError('validators')">-->
+  <!--          Passwords do not match.-->
+  <!--        </p>-->
+
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+  <div formGroupName="passForm">
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="form-control" formControlName="password">
+      <div>
+      <p class="col alert alert-danger" role="alert"
+         *ngIf="formController.controls.passForm.get('password').errors?.minlength">
+        password more than 10 char
+      </p>
+      <p class="col alert alert-danger" role="alert"
+         *ngIf="formController.controls.passForm.get('password').touched">
+        do not Empty.</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword">
+      <p class="col alert alert-danger" role="alert"
+         *ngIf="formController.controls.passForm.get('confirmPassword').errors?.passwordMismatch">
+      Password do not match.</p>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <select id="gender" class="form-control" formControlName="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <p class="col alert alert-danger" role="alert"
+       *ngIf="formController.controls.gender.invalid && (formController.controls.gender.dirty || formController.controls.gender.touched)">
+      Gender Not Empty!
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" class="form-control" formControlName="phone">
+    <p class="col alert alert-danger" role="alert"
+       *ngIf="formController.controls.phone.invalid && (formController.controls.phone.dirty || formController.controls.phone.touched)">
+      Phone Not Empty!
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <input type="text" id="country" class="form-control" formControlName="country">
+    <p class="col alert alert-danger" role="alert"
+       *ngIf="formController.controls.country.invalid && (formController.controls.country.dirty || formController.controls.country.touched)">
+      country Not Empty!
+    </p>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
