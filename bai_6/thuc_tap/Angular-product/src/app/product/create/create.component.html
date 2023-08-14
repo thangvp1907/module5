@@ -1,0 +1,50 @@
+<h1>Tạo Sản phẩm</h1>
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>Mã sản phẩm:</td>
+      <td><input type="number" formControlName="id"></td>
+      <div *ngIf="productForm.controls.id.errors?.required">
+        vui lòng nhập đúng id.
+      </div>
+    </tr>
+    <tr>
+      <td>Tên sản phẩm:</td>
+      <td><input type="text" formControlName="nameProduct"></td>
+      <div *ngIf="productForm.controls.nameProduct.errors?.required">
+        Không được để trống
+      </div>
+      <div *ngIf="productForm.controls.nameProduct.errors?.maxlength">
+        Không được quá 10 kí tự
+      </div>
+    </tr>
+    <tr>
+      <td>Giá sản phẩm</td>
+      <td><input type="number" formControlName="price"></td>
+      <div *ngIf="productForm.controls.price.errors?.required">
+        giá thành không để trống
+      </div>
+      <div *ngIf="productForm.controls.price.errors?.min">
+        giá thành không thấp hơn 1000Đ
+      </div>
+      <div *ngIf="productForm.controls.price.errors?.max">
+        giá thành không lớn hơn 2000Đ
+      </div>
+    </tr>
+    <tr>
+      <td>Mô tả về sản phẩm</td>
+      <td><input type="text" formControlName="description"></td>
+      <div *ngIf="productForm.controls.description.errors?.maxlength">
+        Miêu tả ngắn gọn giùm
+      </div>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button [disabled]="!productForm.valid"
+        >Tạo mới
+        </button>
+      </td>
+    </tr>
+  </table>
+</form>
