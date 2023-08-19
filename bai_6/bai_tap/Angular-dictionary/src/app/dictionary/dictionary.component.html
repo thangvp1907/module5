@@ -1,8 +1,8 @@
 <div>
   <h2>Dictionary App</h2>
-  <input type="text" [(ngModel)]="searchTerm" (keyup)="search()">
+  <input type="text" [(ngModel)]="transTerm" (keyup)="search()">
   <ul *ngIf="meanings.length > 0">
     <li *ngFor="let meaning of meanings">{{ meaning }}</li>
   </ul>
-  <p *ngIf="meanings.length === 0 && searchTerm">No meanings found.</p>
+  <p *ngIf="meanings.length === 0 && transTerm">No meanings found.</p>
 </div>

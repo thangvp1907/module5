@@ -1,0 +1,28 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "ip",
+      "price": 123,
+      "description": "new",
+      "category": "phone"
+    },
+    {
+      "id": "2",
+      "name": "samsung",
+      "price": 456,
+      "description": "old",
+      "category": "phone"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Phone"
+    },
+    {
+      "id": "2",
+      "name": "SamSung"
+    }
+  ]
+}

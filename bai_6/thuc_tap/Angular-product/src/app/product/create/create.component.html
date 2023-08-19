@@ -38,6 +38,14 @@
         Miêu tả ngắn gọn giùm
       </div>
     </tr>
+
+    <tr>
+      <td>Loại Sản Phẩm</td>
+      <td><select formControlName="category">
+        <option value="" disabled>Loại sản phẩm</option>
+        <option *ngFor="let temp of categoryList" [ngValue]="temp">{{temp.nameCategory}}</option>
+      </select></td>
+    </tr>
     <tr>
       <td></td>
       <td>

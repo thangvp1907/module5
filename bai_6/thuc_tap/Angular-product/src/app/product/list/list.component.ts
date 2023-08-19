@@ -11,8 +11,7 @@ import {Router} from '@angular/router';
 export class ListComponent implements OnInit {
   product: Product[] = [];
 
-  constructor(private ProductServer: ProductServerService,
-              private router: Router) {
+  constructor(private ProductServer: ProductServerService) {
   }
 
   ngOnInit(): void {
@@ -20,7 +19,13 @@ export class ListComponent implements OnInit {
   }
 
   getAll() {
-    this.product = this.ProductServer.getAll();
+    this.ProductServer.getAll().subscribe(value => {
+      this.product = value;
+    }, error => {
+      console.log(error);
+    }, () => {
+      console.log('Complete');
+    });
   }
 
 }

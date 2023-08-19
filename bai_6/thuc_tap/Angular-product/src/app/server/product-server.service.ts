@@ -1,65 +1,40 @@
 import {Injectable} from '@angular/core';
 import {Product} from '../model/product';
+import {HttpClient} from '@angular/common/http';
+import {environment} from '../../environments/environment';
+import {Observable} from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductServerService {
-  products: Product[] = [{
-    id: 1,
-    nameProduct: 'IPhone 12',
-    price: 2400000,
-    description: 'New'
-  }, {
-    id: 2,
-    nameProduct: 'IPhone 11',
-    price: 1560000,
-    description: 'Like new'
-  }, {
-    id: 3,
-    nameProduct: 'IPhone X',
-    price: 968000,
-    description: '97%'
-  }, {
-    id: 4,
-    nameProduct: 'IPhone 8',
-    price: 7540000,
-    description: '98%'
-  }, {
-    id: 5,
-    nameProduct: 'IPhone 11 Pro',
-    price: 1895000,
-    description: 'Like new'
-  }];
 
-  constructor() {
+  private API_URL = 'http://localhost:3000/product';
+
+  constructor(private http: HttpClient) {
   }
 
-  updateProductById(id: number, product: Product) {
-    for (let i = 0; i < this.products.length; i++) {
-      if (this.products[i].id === id) {
-        this.products[i] = product;
-      }
-    }
+  updateProduct(product: Product): Observable<Product> {
+    return this.http.patch<Product>(this.API_URL + '/' + product.id, product);
   }
 
-  findById(id: number) {
-    return this.products.find(product => product.id === id);
+  findById(id: number): Observable<Product> {
+    return this.http.get<Product>(this.API_URL + '/' + id);
   }
 
-  getAll() {
-    return this.products;
+  getAll(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.API_URL);
   }
 
-  saveProduct(product) {
-    this.products.push(product);
+  saveProduct(product): Observable<Product> {
+    return this.http.post<Product>(this.API_URL, product);
   }
 
-  deleteProduct(id: number) {
-    this.products = this.products.filter(product => {
-      return product.id !== id;
-    });
+  deleteProduct(id: number): Observable<Product> {
+    return this.http.delete<Product>(this.API_URL + '/' + id);
   }
-
-
 }
+
+
+

@@ -1,0 +1,44 @@
+{
+  "product": [
+    {
+      "id": "2",
+      "nameProduct": "sam",
+      "price": 456,
+      "description": "old",
+      "category": {
+        "id": "1",
+        "nameCategory": "Phone"
+      }
+    },
+    {
+      "id": 3,
+      "nameProduct": "ip14pro",
+      "price": 1000,
+      "description": "ngon",
+      "category": {
+        "id": 2,
+        "nameCategory": "SamSung"
+      }
+    },
+    {
+      "id": 4,
+      "nameProduct": "ip5",
+      "price": 1000,
+      "description": "phèn",
+      "category": {
+        "id": "1",
+        "nameCategory": "Phone"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "nameCategory": "Phone"
+    },
+    {
+      "id": "2",
+      "nameCategory": "SamSung"
+    }
+  ]
+}

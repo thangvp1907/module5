@@ -7,14 +7,14 @@ import {DictionaryServiceService} from "../service/dictionary-service.service";
   styleUrls: ['./dictionary.component.css']
 })
 export class DictionaryComponent implements OnInit {
-  searchTerm: string = '';
+  transTerm: string = '';
   meanings: string[] = [];
 
   constructor(private dictionaryService: DictionaryServiceService) {}
 
   search() {
-    if (this.searchTerm.trim() !== '') {
-      this.meanings = this.dictionaryService.translate(this.searchTerm);
+    if (this.transTerm.trim() !== '') {
+      this.meanings = this.dictionaryService.translate(this.transTerm);
     } else {
       this.meanings = [];
     }
