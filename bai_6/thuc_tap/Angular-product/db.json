@@ -11,16 +11,6 @@
       }
     },
     {
-      "id": 3,
-      "nameProduct": "ip14pro",
-      "price": 1000,
-      "description": "ngon",
-      "category": {
-        "id": 2,
-        "nameCategory": "SamSung"
-      }
-    },
-    {
       "id": 4,
       "nameProduct": "ip5",
       "price": 1000,

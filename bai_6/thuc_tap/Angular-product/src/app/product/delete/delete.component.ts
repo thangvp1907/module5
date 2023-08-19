@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ProductServerService} from '../../server/product-server.service';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {FormControl, FormGroup} from '@angular/forms';
+import {Product} from '../../model/product';
 
 @Component({
   selector: 'app-delete',
@@ -9,29 +10,31 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./delete.component.css']
 })
 export class DeleteComponent implements OnInit {
-  productId: number;
   productForm: FormGroup;
+  productId: number;
+  productNew: Product;
+
+
 
   constructor(private productServer: ProductServerService,
               private router: Router,
               private activate: ActivatedRoute) {
-    this.activate.paramMap.subscribe((paramMap: ParamMap) => {
-      this.productId = +paramMap.get('id');
-      this.getProduct(this.productId);
-    });
   }
 
   ngOnInit(): void {
-  }
-
-  private getProduct(productId: number) {
-    return this.productServer.findById(productId).subscribe(product => {
-      this.productForm = new FormGroup({
-        nameProduct: new FormControl(product.nameProduct),
-        price: new FormControl(product.price),
-        description: new FormControl(product.description),
-        category: new FormControl(product.category)
-      });
+    this.activate.paramMap.subscribe(value => {
+      this.productId = Number(value.get('id'));
+    });
+    this.productServer.findById(this.productId).subscribe(value => {
+      this.productNew = value;
+      this.productForm.patchValue(this.productNew);
+    });
+    this.productForm = new FormGroup({
+      id: new FormControl(),
+      nameProduct: new FormControl(),
+      price: new FormControl(),
+      description: new FormControl(),
+      category: new FormControl()
     });
   }
 
